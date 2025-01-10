@@ -1,5 +1,5 @@
 const API_KEY = 'f3eb2f97d9fd7a94bd7b81e3c5dfd68a64911536b5cfbb1ef824bffef0a531e8';  // Replace with your API key
-const API_URL =  process.env.API_URL || 'https://bocabookcafe-degxe0e3bkebgxgr.southeastasia-01.azurewebsites.net/';  // Replace with your actual API URL
+const API_URL =  'https://bocabookcafe-degxe0e3bkebgxgr.southeastasia-01.azurewebsites.net/';  // Replace with your actual API URL
 
 document.getElementById('submit-book').addEventListener('click', getFoodRecommendations);
 
