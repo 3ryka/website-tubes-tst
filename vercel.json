@@ -1,15 +1,19 @@
 {
     "version": 2,
     "builds": [
-      { "src": "src/**/*", "use": "@vercel/static" }
+      { "src": "src/**/*", "use": "@vercel/static" },
+      { "src": "asset/**/*", "use": "@vercel/static" }
     ],
     "routes": [
       { "src": "/", "dest": "/src/index.html" },
+      { "src": "/homepage.html", "dest": "/src/homepage.html" },
       { "src": "/homepage", "dest": "/src/homepage.html" },
+      { "src": "/api.html", "dest": "/src/api.html" },
       { "src": "/api", "dest": "/src/api.html" },
-      { "src": "/asset/(.*)", "dest": "/src/asset/$1" },
-      { "src": "/(.*)\\.js", "dest": "/src/$1.js" },
-      { "src": "/(.*)\\.css", "dest": "/src/$1.css" },
+      { "src": "/asset/(.*)", "dest": "/asset/$1" },
+      { "src": "/(.*).js", "dest": "/src/$1.js" },
+      { "src": "/(.*).css", "dest": "/src/$1.css" },
+      { "src": "/(.*).html", "dest": "/src/$1.html" },
       { "handle": "filesystem" }
     ]
   }
