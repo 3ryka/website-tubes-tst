@@ -1,0 +1,9 @@
+{
+    "name": "boca-book-cafe",
+    "version": "1.0.0",
+    "description": "BOCA Book Cafe Service",
+    "main": "index.html",
+    "scripts": {
+      "start": "vercel dev"
+    }
+  }
