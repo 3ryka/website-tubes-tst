@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOCA - Homepage</title>
+    <link rel="stylesheet" href="homepagestyles.css">
+    <script type="module" src="homepagescript.js" defer></script>
+</head>
+
+<body>
+    <!-- Banner -->
+    <div class="banner">
+        <img src="../asset/logo_boca2.png" alt="BOCA Logo" class="boca-logo">
+        <a href="api.html" class="api-link">API</a>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <section class="recommendation-section">
+            <h2>Match your Book with our Food!</h2>
+            <p>Log the current book you're reading to find out what dish from our menu should accompany you while reading.</p>
+
+            <div class="book-selection">
+                <label for="book-dropdown">Choose your book:</label>
+                <select id="book-dropdown">
+                    <option value="">Select a book...</option>
+                    <!-- Options will be dynamically populated from Firebase -->
+                </select>
+                <button id="submit-book" class="btn">Get Recommendations</button>
+            </div>
+
+            <!-- Recommendations will be displayed here -->
+            <div id="food-recommendations" class="recommendations">
+                <!-- Food suggestions will be shown here -->
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

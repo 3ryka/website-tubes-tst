@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Key Generator</title>
+    <style>
+        #api-key-container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: none;
+            font-family: monospace;
+        }
+
+        #api-key {
+            width: 100%;
+            max-width: 600px;
+            /* Increased max-width */
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            /* Add space below the API key box */
+        }
+
+        .buttons-container {
+            display: flex;
+            gap: 10px;
+            /* Space between the buttons */
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script type="module" src="apiscript.js" defer></script>
+</head>
+
+<body>
+    <h2>Generate Your API Key</h2>
+    <h4>Each user can only generate API keys for 5 times.
+        Make sure to keep your API key(s) in a secure place and not lose them!</h4>
+    <div class="buttons-container">
+        <button onclick="checkApiKey()">Generate API Key</button>
+    </div>
+
+    <div id="api-key-container">
+        <input type="text" id="api-key" readonly>
+        <div class="buttons-container">
+            <button onclick="toggleApiKey()">Show/Hide Key</button>
+            <button onclick="copyApiKey()">Copy API Key</button>
+        </div>
+    </div>
+    Read the API documentation <a href="http://127.0.0.1:8000/docs" class="docs-link">here</a>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-color: #1b57b0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.boca-logo {
+    height: 50px;
+}
+
+.api-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-content {
+    background-color: #f4f4f9; /* Gray background */
+    padding: 20px;
+}
+
+.recommendation-section h2 {
+    color: black;
+}
+
+.book-selection {
+    margin-top: 20px;
+}
+
+#submit-book {
+    background-color: #1b57b0;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#food-recommendations {
+    margin-top: 20px;
+}
+
+.food-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}
