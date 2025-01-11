@@ -42,7 +42,36 @@
                 <p>Loading recommendations... Please wait 🙏</p>
             </div>            
         </section>
-    </div>
+
+            <!-- Menu Section -->
+            <section class="menu-section">
+                <h2>Our Menu</h2>
+                <div id="menu-container" class="menu-grid">
+                    <!-- Menu items will be loaded here -->
+                </div>
+            </section>
+    
+            <!-- Shopping Cart -->
+            <div id="shopping-cart" class="shopping-cart">
+                <h3>Your Order</h3>
+                <div id="cart-items">
+                    <!-- Cart items will be displayed here -->
+                </div>
+                <div id="cart-summary">
+                    <div class="total">Total: Rp. <span id="total-amount">0</span></div>
+                    <button id="confirm-payment" class="btn">Confirm Payment</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Thank You Modal -->
+        <div id="thank-you-modal" class="modal">
+            <div class="modal-content">
+                <h3>Thank you for your order!</h3>
+                <p>Your payment has been confirmed.</p>
+                <button onclick="closeThankYouModal()" class="btn">Close</button>
+            </div>
+        </div>
 </body>
 
 </html>
